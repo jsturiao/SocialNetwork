@@ -2,11 +2,12 @@
 
   // Define DB Params
   define("DB_ENGINE", "mysql");
-  define("DB_HOST", "tyduzbv3ggpf15sx.cbetxkdyhwsb.us-east-1.rds.amazonaws.com");
-  define("DB_USER", "hewzotsg44zr0g6u");
-  define("DB_PASS", "pklcyu7d87vuf80q");
-  define("DB_NAME", "phfumt53wps14akv");
+  define("DB_HOST", "localhost");
+  define("DB_USER", "root");
+  define("DB_PASS", "luciana");
+  define("DB_NAME", "shareboard");
 
   // Define a URL
-  define("ROOT_PATH", "");
-  define("ROOT_URL", "https://sharesomething.herokuapp.com/");
+  define("ROOT_PATH", "/php.dev/");
+  define("ROOT_URL", "http://localhost/php.dev/");
+
