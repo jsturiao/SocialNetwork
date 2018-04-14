@@ -9,4 +9,4 @@
 
   // Define a URL
   define("ROOT_PATH", "/php.dev/");
-  define("ROOT_URL", "http://localhost/php.dev/");
+  define("ROOT_URL", "/");
