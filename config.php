@@ -8,5 +8,5 @@
   define("DB_NAME", "phfumt53wps14akv");
 
   // Define a URL
-  define("ROOT_PATH", "/php.dev/");
+  define("ROOT_PATH", "/");
   define("ROOT_URL", "https://sharesomething.herokuapp.com/");
