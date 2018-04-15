@@ -1,27 +1,33 @@
 <?php
-// Include Config
 
-ini_set('display_errors', '1');
-error_reporting(E_ALL);
+	// Start Session
+	session_start();
 
-require('config.php');
+	// Include Config
+	require('config.php');
 
-require('classes/Bootstrap.php');
-require('classes/Controller.php');
-require('classes/Model.php');
+	if (DEBUG) {
+		ini_set('display_errors', '1');
+		error_reporting(E_ALL);
+	}
 
-require('controllers/home.php');
-require('controllers/shares.php');
-require('controllers/users.php');
+	require('classes/Messages.php');
+	require('classes/Bootstrap.php');
+	require('classes/Controller.php');
+	require('classes/Model.php');
 
-require('models/home.php');
-require('models/share.php');
-require('models/user.php');
+	require('controllers/home.php');
+	require('controllers/shares.php');
+	require('controllers/users.php');
 
-$bootstrap = new Bootstrap($_GET);
+	require('models/home.php');
+	require('models/share.php');
+	require('models/user.php');
 
-$controller = $bootstrap->createController();
+	$bootstrap = new Bootstrap($_GET);
 
-if($controller){
-  $controller->executeAction();
-}
+	$controller = $bootstrap->createController();
+
+	if($controller){
+	  $controller->executeAction();
+	}

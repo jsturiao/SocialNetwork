@@ -12,14 +12,13 @@
 			</div>
 			<div class="form-group">
 				<label>Email</label>
-				<textarea name="email" class="form-control"></textarea>
+				<input type="text" name="email" class="form-control" />
 			</div>
 			<div class="form-group">
-				<label>Link</label>
-				<input type="text" name="link" class="form-control" />
+				<label>Password</label>
+				<input type="password" name="password" class="form-control" />
 			</div>
 			<input class="btn btn-primary" name="submit" type="submit" value="Submit" />
-				<a class="btn btn-danger" href="<?php echo ROOT_PATH; ?>shares">Cancel</a>
 		</form>
 	</div>
 
